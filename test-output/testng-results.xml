@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-28T15:22:59Z" name="Default suite" finished-at="2023-06-28T15:22:59Z" duration-ms="37">
+    <groups>
+    </groups>
+    <test started-at="2023-06-28T15:22:59Z" name="Default test" finished-at="2023-06-28T15:22:59Z" duration-ms="37">
+      <class name="com.nopcommerce.users.Level_01_Register">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.users.Level_01_Register@7d20d0b]" started-at="2023-06-28T15:22:59Z" name="beforeClass" finished-at="2023-06-28T15:22:59Z" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="f()[pri:0, instance:com.nopcommerce.users.Level_01_Register@7d20d0b]" started-at="2023-06-28T15:22:59Z" name="f" finished-at="2023-06-28T15:22:59Z" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.users.Level_01_Register@7d20d0b]" started-at="2023-06-28T15:22:59Z" name="afterClass" finished-at="2023-06-28T15:22:59Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.users.Level_01_Register -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
