@@ -2,7 +2,7 @@
 <suite parallel="false" name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.nopcommerce.users.Level_01_Register.java"/>
+      <class name="com.nopcommerce.users.Level_03_Page_Object_Pattern"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

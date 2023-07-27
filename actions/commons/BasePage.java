@@ -1,11 +1,10 @@
  package commons;
 
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -65,8 +64,8 @@ public class BasePage {
 		  return new WebDriverWait(driver, 30).until(ExpectedConditions.alertIsPresent());
 	}
 	
-	public WebElement webDriverWaitForElement(WebDriver driver, String locator) {
-		return new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+	public WebElement waitForElement(WebDriver driver, String locator) {
+		return new WebDriverWait(driver, 60).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 	}
 	
 	public void switchToWindowByTittle(WebDriver driver,String expectedTittle) {
@@ -81,7 +80,7 @@ public class BasePage {
 	}
 	// xem lai nhe, co switch ve expectedID khong khi close tab
 	public void closeAllWindowWithoutExpectedID(WebDriver driver, String expectedTittle) {
-		Set <String> allIDs = driver.getWindowHandles();
+		Set<String> allIDs = driver.getWindowHandles();
 		for (String id : allIDs) {
 			driver.switchTo().window(id);
 			String actualTittle = driver.getTitle();
@@ -128,4 +127,23 @@ public class BasePage {
 	public List<WebElement> getListElements(WebDriver driver, String xpathExpression) {
 		return driver.findElements(By.xpath(xpathExpression));
 	}
+	
+	public String getAttributeValue(WebDriver driver, String xpathExpression, String attribute) {
+		return driver.findElement(By.xpath(xpathExpression)).getAttribute(attribute);
+	}
+	
+	public int randomNumber() {
+		Random rand = new Random();
+		int randomNumber = rand.nextInt(99999);
+		return randomNumber;
+	}
+	
+	public String getEmailAddress() {
+		String firstName = "snape";
+		String LastName = "severus";
+		return firstName + LastName + randomNumber()+"@gmail.com";
+		
+	}
+	
+	
 }

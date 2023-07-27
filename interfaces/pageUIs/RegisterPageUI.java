@@ -15,5 +15,6 @@ public class RegisterPageUI {
 	public static final String CONFIRM_PASSWORD_TEXTBOX = "//input[@id='ConfirmPassword']";
 	
 	public static final String REGISTER_SUCCESS_MESSAGE = "//div[@class='result']']";
+	public static final String HOME_PAGE_LOGO = "//div[@class='header-logo']//img";
 	
 }
