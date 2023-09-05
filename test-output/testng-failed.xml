@@ -6,9 +6,13 @@
       <class name="com.nopcommerce.users.Level_03_Page_Object_Pattern">
         <methods>
           <include name="Register_05_Success"/>
+          <include name="Register_01_Empty_Data"/>
+          <include name="Register_04_Invalid_Confirm_Password"/>
           <include name="beforeClass"/>
           <include name="Register_06_Verify_Login"/>
           <include name="afterClass"/>
+          <include name="Register_02_Invalid_Email"/>
+          <include name="Register_03_Invalid_Password"/>
         </methods>
       </class> <!-- com.nopcommerce.users.Level_03_Page_Object_Pattern -->
     </classes>
