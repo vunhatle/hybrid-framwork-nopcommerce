@@ -1,5 +1,6 @@
  package commons;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
@@ -67,24 +68,24 @@ public class BasePage {
 	}
 	
 	public Alert waitForAlertPresence (WebDriver driver) {
-		  return new WebDriverWait(driver, 30).until(ExpectedConditions.alertIsPresent());
+		  return new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.alertIsPresent());
 	}
 	
 	public WebElement waitForElement(WebDriver driver, String xpathExpression) {
-		return new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(getByXpath(xpathExpression)));
+		return new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(getByXpath(xpathExpression)));
 	}
 	
 	public void waitForElementVisible(WebDriver driver, String xpathExpression) {
-		new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(getByXpath(xpathExpression)));
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(getByXpath(xpathExpression)));
 	}
 	public void waitForListElementVisible(WebDriver driver, String xpathExpression) {
-		new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(xpathExpression)));
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(xpathExpression)));
 	}
 	public void waitForElementClickable(WebDriver driver, String xpathExpression) {
-		new WebDriverWait(driver, 15).until(ExpectedConditions.elementToBeClickable(getByXpath(xpathExpression)));
+		new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.elementToBeClickable(getByXpath(xpathExpression)));
 	}
 	public void waitForElementInvisible(WebDriver driver, String xpathExpression) {
-		new WebDriverWait(driver,15).until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(xpathExpression)));
+		new WebDriverWait(driver,Duration.ofSeconds(15)).until(ExpectedConditions.invisibilityOfElementLocated(getByXpath(xpathExpression)));
 	}
 	
 	public void switchToWindowByTittle(WebDriver driver,String expectedTittle) {
@@ -148,7 +149,7 @@ public class BasePage {
 		getElement(driver, xpathParent).click();
 		sleepInSecond(1);
 		
-		List <WebElement> allItems = new WebDriverWait(driver, 30).until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(xpathChild)));
+		List <WebElement> allItems = new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(xpathChild)));
 		
 		for (WebElement tempElement : allItems) {
 			if(tempElement.getText().equals(expectedText)) {
@@ -299,18 +300,9 @@ public class BasePage {
 	public boolean isImageLoaded(WebDriver driver, String xpathExpression) {
 		return (boolean)((JavascriptExecutor) driver).executeScript("return arguments[0].complete && typeof arguments[0].naturalWidth != 'undefined' && arguments[0].naturalWidth > 0", getElement(driver, xpathExpression));
 	}
-	public int randomNumber() {
-		Random rand = new Random();
-		int randomNumber = rand.nextInt(99999);
-		return randomNumber;
-	}
 	
-	public String getEmailAddress() {
-		String firstName = "snape";
-		String LastName = "severus";
-		return firstName + LastName + randomNumber()+"@gmail.com";
-		
-	}
+	
+
 	
 	
 }
