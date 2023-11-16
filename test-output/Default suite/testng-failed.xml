@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.users.Level_03_Page_Object_Pattern">
+      <class name="com.nopcommerce.users.Level_06_Switch_Page_Object">
         <methods>
-          <include name="Register_01_Empty_Data"/>
+          <include name="Register_02_Verify_Login"/>
+          <include name="Register_03_Switch_Page_Objects"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
+          <include name="Register_01_Success"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.Level_03_Page_Object_Pattern -->
+      </class> <!-- com.nopcommerce.users.Level_06_Switch_Page_Object -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

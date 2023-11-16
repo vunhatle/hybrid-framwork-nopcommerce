@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Suite">
+  
+  <parameter name = "userUrl" value = "https://demo.nopcommerce.com"></parameter>
+  <parameter name = "adminUrl" value = "https://admin-demo.nopcommerce.com"></parameter>
+  
   <test name="Run on Chrome">
   	<parameter name = "browser" value = "Chrome"></parameter>
     <classes>
-      <class name="com.nopcommerce.users.Level_04_Multiple_Browsers"/>
-    </classes>
-  </test>
-  
-  <test name="Run on Firefox">
-  	<parameter name = "browser" value = "Firefox"></parameter>
-    <classes>
-      <class name="com.nopcommerce.users.Level_04_Multiple_Browsers"/>
-    </classes>
-  </test>
-  
-  <test name="Run on Edge">
-  	<parameter name = "browser" value = "Edge"></parameter>
-    <classes>
-      <class name="com.nopcommerce.users.Level_04_Multiple_Browsers"/>
+      <class name="com.nopcommerce.users.Level_07_Switch_Page_Url"/>
     </classes>
   </test>
 

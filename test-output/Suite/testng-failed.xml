@@ -1,40 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
+  <parameter name="adminUrl" value="https://admin-demo.nopcommerce.com"/>
+  <parameter name="userUrl" value="https://demo.nopcommerce.com"/>
   <test thread-count="5" name="Run on Chrome(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.nopcommerce.users.Level_04_Multiple_Browsers">
+      <class name="com.nopcommerce.users.Level_07_Switch_Page_Url">
         <methods>
+          <include name="Register_03_Switch_Url"/>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="Register_06_Verify_Login"/>
+          <include name="Register_01_Success"/>
+          <include name="Register_02_Verify_Login"/>
         </methods>
-      </class> <!-- com.nopcommerce.users.Level_04_Multiple_Browsers -->
+      </class> <!-- com.nopcommerce.users.Level_07_Switch_Page_Url -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
-  <test thread-count="5" name="Run on Firefox(failed)">
-    <parameter name="browser" value="Firefox"/>
-    <classes>
-      <class name="com.nopcommerce.users.Level_04_Multiple_Browsers">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="Register_06_Verify_Login"/>
-        </methods>
-      </class> <!-- com.nopcommerce.users.Level_04_Multiple_Browsers -->
-    </classes>
-  </test> <!-- Run on Firefox(failed) -->
-  <test thread-count="5" name="Run on Edge(failed)">
-    <parameter name="browser" value="Edge"/>
-    <classes>
-      <class name="com.nopcommerce.users.Level_04_Multiple_Browsers">
-        <methods>
-          <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="Register_06_Verify_Login"/>
-        </methods>
-      </class> <!-- com.nopcommerce.users.Level_04_Multiple_Browsers -->
-    </classes>
-  </test> <!-- Run on Edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

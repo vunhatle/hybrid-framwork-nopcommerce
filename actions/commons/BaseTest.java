@@ -13,7 +13,7 @@ public class BaseTest {
 	private WebDriver driver;
 	//String projectPath = System.getProperty("user.dir");
 	
-	protected WebDriver getBrowserDriver(String browserName) {
+	protected WebDriver getBrowserDriver(String browserName, String userUrl) {
 		BrowserList browserList = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browserList) {
 			case CHROME:
@@ -35,19 +35,22 @@ public class BaseTest {
 		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().window().maximize();
-		driver.get("https://demo.nopcommerce.com/");
+		driver.get(userUrl);
 		return driver;
 		}
-	protected int randomNumber() {
-		Random rand = new Random();
-		int randomNumber = rand.nextInt(99999);
-		return randomNumber;
-	}
-	protected String getEmailAddress() {
-		String firstName = "snape";
-		String LastName = "severus";
-		return firstName + LastName + randomNumber()+"@gmail.com";	
-	}
+		
+	 protected int randomNumber() { 
+		 Random rand = new Random(); 
+		 int randomNumber = rand.nextInt(99999); 
+		 return randomNumber; 
+		 }
+
+	 protected String getEmailAddress() { 
+		 String firstName = "snape"; 
+		 String LastName = "severus"; 
+		 return firstName + LastName + randomNumber()+"@gmail.com"; 
+		 }
+	 
 	protected void quitDriver() {
 		driver.quit();
 	}

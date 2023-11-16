@@ -14,17 +14,17 @@ import org.testng.annotations.Test;
 
 import commons.BasePage;
 import commons.BaseTest;
-import pageObjects.CustomerPageObject;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.users.CustomerPageObject;
+import pageObjects.users.HomePageObject;
+import pageObjects.users.LoginPageObject;
+import pageObjects.users.RegisterPageObject;
 
 
 public class Level_04_Multiple_Browsers extends BaseTest {
 	WebDriver driver;
 	String osName = System.getProperty("os.name");
 	JavascriptExecutor js = (JavascriptExecutor) driver;;
-	BasePage basePage = new BasePage();
+	// BasePage basePage = new BasePage();
 	String emailAddress = getEmailAddress();
 
 	HomePageObject homePage;
@@ -149,7 +149,7 @@ public class Level_04_Multiple_Browsers extends BaseTest {
 		loginPage.clickonLoginButton();
 
 		homePage = new HomePageObject(driver);
-		homePage.clickToMyAccountLink();
+		//homePage.clickToMyAccountLink();
 
 		customerPage = new CustomerPageObject(driver);
 
