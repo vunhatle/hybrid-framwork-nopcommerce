@@ -1,0 +1,13 @@
+[2024-01-02 14:47:44,865 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 01: Initializing home page object
+[2024-01-02 14:47:45,485 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 02: Click on Register 
+[2024-01-02 14:47:45,987 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 03: Click on Register button
+[2024-01-02 14:47:46,114 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 04: Verify Error on first name
+[2024-01-02 14:47:46,188 INFO com.nopcommerce.users.Level_12_Log] - -------------FAILED-------------
+[2024-01-02 14:47:46,189 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 05: Enter first name
+[2024-01-02 14:47:46,290 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 06: Enter last name
+[2024-01-02 14:47:46,416 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 07: Enter email
+[2024-01-02 14:47:46,564 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 08: Enter password
+[2024-01-02 14:47:46,677 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 09: Enter confirm password
+[2024-01-02 14:47:46,784 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 02: Click on register button
+[2024-01-02 14:47:47,493 INFO com.nopcommerce.users.Level_12_Log] - Register 01 - Step 02: Verify register success message
+[2024-01-02 14:47:47,570 INFO com.nopcommerce.users.Level_12_Log] - -------------FAILED-------------

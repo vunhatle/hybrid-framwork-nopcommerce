@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite parallel="none" name="Suite">
   
-  <parameter name = "userUrl" value = "https://demo.nopcommerce.com"></parameter>
-  <parameter name = "adminUrl" value = "https://admin-demo.nopcommerce.com"></parameter>
+  <listeners>
+  	<listener class-name="commons.MethodListener"/>
+  </listeners>
   
   <test name="Run on Chrome">
   	<parameter name = "browser" value = "Chrome"></parameter>
     <classes>
-      <class name="com.nopcommerce.users.Level_07_Switch_Page_Url"/>
+      <class name="com.nopcommerce.users.Level_12_Log"/>
     </classes>
   </test>
 
