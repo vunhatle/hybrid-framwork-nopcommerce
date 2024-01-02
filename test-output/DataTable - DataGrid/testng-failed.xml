@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DataTable - DataGrid]">
+  <parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/"/>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.jquery.table.Level_15_Take_Screen_Shoot">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_01_Single_Upload_File"/>
+        </methods>
+      </class> <!-- com.jquery.table.Level_15_Take_Screen_Shoot -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [DataTable - DataGrid] -->

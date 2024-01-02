@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="MySQL-Connection">
+  
+ 
+  <test name="Run MySQL Connection">
+  	
+    <classes>
+      <class name="com.jquery.table.DatabaseTesingDemo"/>
+    </classes>
+  </test>
+
+
+</suite> <!-- Suite -->

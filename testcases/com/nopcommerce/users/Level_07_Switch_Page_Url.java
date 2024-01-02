@@ -108,6 +108,7 @@ public class Level_07_Switch_Page_Url extends BaseTest {
 		adminLoginPage.openURL(driver, userUrl);
 		homePage = PageGeneratorManager.getHomePage(driver);
 		
+		loginPage = homePage.clickOnLoginLink();
 		loginPage.enterEmailAddress(emailAddress);
 		loginPage.enterPassword("123456");
 		loginPage.clickonLoginButton();

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MySQL-Connection]">
+  <test thread-count="5" name="Run CSV Reader(failed)">
+    <classes>
+      <class name="com.jquery.table.ReadCSV">
+        <methods>
+          <include name="readDataLineByLine"/>
+        </methods>
+      </class> <!-- com.jquery.table.ReadCSV -->
+    </classes>
+  </test> <!-- Run CSV Reader(failed) -->
+</suite> <!-- Failed suite [MySQL-Connection] -->

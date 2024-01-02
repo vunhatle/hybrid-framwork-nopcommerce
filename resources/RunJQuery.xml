@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="DataTable - DataGrid">
+  
+ <parameter name="url" value = "https://blueimp.github.io/jQuery-File-Upload/" />
+  <test name="Run on Chrome">
+  	<parameter name = "browser" value = "Chrome"></parameter>
+    <classes>
+      <class name="com.jquery.table.Level_15_Take_Screen_Shoot"/>
+    </classes>
+  </test>
+
+
+</suite> <!-- Suite -->
