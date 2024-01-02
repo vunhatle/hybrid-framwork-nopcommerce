@@ -30,7 +30,7 @@ public class DownloadFile extends BaseTest {
 	public void SetDownloadDefaultDirectory() {
 		//download.scrollToElementOnDown(driver, "xpath=//p[contains(text(),'Latest stable version')]/following-sibling::p");
 		download.clickToAnElement(driver, "xpath=//p[contains(text(),'Latest stable version')]/a");
-		
+		// test edit
 
 		}
 
