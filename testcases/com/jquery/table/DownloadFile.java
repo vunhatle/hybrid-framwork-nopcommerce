@@ -16,6 +16,7 @@ import pageObjects.jquery.DownloadPageObject;
 
 public class DownloadFile extends BaseTest {
 	WebDriver driver;
+	
 	DownloadPageObject download;
 	// @org.testng.annotations.Parameters("browser")
 	@Parameters({"browser","url"})
