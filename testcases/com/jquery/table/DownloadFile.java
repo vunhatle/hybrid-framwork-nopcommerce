@@ -31,8 +31,12 @@ public class DownloadFile extends BaseTest {
 		//download.scrollToElementOnDown(driver, "xpath=//p[contains(text(),'Latest stable version')]/following-sibling::p");
 		download.clickToAnElement(driver, "xpath=//p[contains(text(),'Latest stable version')]/a");
 		// test edit
+
 		// hello
 		//hi
+
+		// test 05
+
 		}
 
 
